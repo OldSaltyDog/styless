@@ -1,0 +1,15 @@
+#xf {
+	.spin(@angle: 0deg) {
+		#xf.rotate(@angle);
+	}
+
+	.spin() {
+		.cw(@angle) {
+			#xf.rotate(@angle);
+		}
+
+		.ccw(@angle) {
+			#xf.rotate(-(@angle));
+		}
+	}
+}

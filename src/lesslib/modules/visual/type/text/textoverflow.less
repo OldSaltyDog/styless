@@ -1,0 +1,21 @@
+#text {
+	.overflow() {
+		.clip() {
+			#text.nowrap();
+			#ovf.hide();
+			text-overflow: clip;
+		}
+
+		.ellipse() {
+			#text.nowrap();
+			#ovf.hide();
+			text-overflow: ellipse;
+		}
+
+		.str(@val) {
+			#text.nowrap();
+			#ovf.hide();
+			text-overflow: @val;
+		}
+	}
+}

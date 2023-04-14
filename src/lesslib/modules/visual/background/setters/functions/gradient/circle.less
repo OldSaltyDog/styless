@@ -1,0 +1,27 @@
+#gf {
+	.circle(@cs) {
+		@img: radial-gradient(circle, @cs);
+	}
+
+	.circle(@cs; @ext) {
+		@img: radial-gradient(circle @ext, @cs);
+	}
+
+	.circle(@cs; @ext; @origin) {
+		@img: radial-gradient(circle @ext at @origin, @cs);
+	}
+
+	.circle() {
+		.repeat(@cs) {
+			@img: repeating-radial-gradient(circle, @cs);
+		}
+	
+		.repeat(@cs; @ext) {
+			@img: repeating-radial-gradient(circle @ext, @cs);
+		}
+	
+		.repeat(@cs; @ext; @origin) {
+			@img: repeating-radial-gradient(circle @ext at @origin, @cs);
+		} 
+	}
+}

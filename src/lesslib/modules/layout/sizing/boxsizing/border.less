@@ -1,0 +1,15 @@
+#box {
+	.border() {
+		box-sizing: border-box;
+	}
+
+	.border(@w) {
+		box-sizing: border-box;
+		width: @w;
+	}
+
+	.border(@w; @h) {
+		box-sizing: border-box;
+		.size(@w, @h);
+	}
+}

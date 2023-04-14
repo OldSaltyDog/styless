@@ -1,0 +1,15 @@
+#xf {
+	.skew(@x: 0deg; @y: 0deg) {
+		#xf.set(skew(@x, @y));
+	}
+
+	.skew() {
+		.x(@x: 0deg) {
+			#xf.set(skewX(@x));
+		}
+		
+		.y(@y: 0deg) {
+			#xf.set(skewY(@y));
+		}
+	}
+}

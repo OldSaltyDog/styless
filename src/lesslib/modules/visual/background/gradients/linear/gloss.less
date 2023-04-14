@@ -1,0 +1,15 @@
+/**
+ * @name: #bg.lg.gloss
+ * @desc: Sets a linear glossy style background
+ * @params: 
+ * 		@clr* 	<color> 	(-)
+ * 		@angle*	<angle>		(180deg)
+ * */
+#bg {
+	.lg() {
+		.glossy(@clr; @angle: @from[t]) {
+			@cs: #cs.gloss(@clr)[];
+			background+: #gf.linear(@cs; @angle)[];
+		}
+	}
+}

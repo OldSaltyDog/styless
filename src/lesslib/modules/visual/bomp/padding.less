@@ -1,0 +1,37 @@
+.pad(@pad) when (@pad > 0) {
+	padding: @pad;
+}
+
+#pad {
+	.none() {
+		padding: 0;
+	}
+
+	.top(@pad) {
+		padding-top: @pad;
+	}
+
+	.right(@pad) {
+		padding-right: @pad;
+	}
+
+	.bottom(@pad) {
+		padding-bottom: @pad;
+	}
+
+	.left(@pad) {
+		padding-left: @pad;
+	}
+
+	.x(@pad) {
+		padding: @pad 0;
+	}
+
+	.y(@pad) {
+		padding: 0 @pad;
+	}
+
+	.all(@pad) {
+		padding: @pad;
+	}
+}

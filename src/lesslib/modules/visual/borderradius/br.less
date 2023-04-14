@@ -1,0 +1,39 @@
+.br(@val) {
+	border-radius: @val;
+}
+
+.br-50() {
+	border-radius: 50%;
+}
+
+.br-25() {
+	border-radius: 25%;
+}
+
+#br {
+	.none() {
+		border-radius: 0;
+	}
+
+	.diag(@tr-bl; @tl-br) {
+		border-radius: @tr-bl @tl-br;
+	}
+
+	.tb-lr(@tb; @lr) {
+		border-radius: @tb ~'/'@lr;
+	}
+
+	.round() {
+		border-radius: 50%;
+	}
+
+	.kids-fl(@val) {
+		& :first-child {
+			#br.l(@val);
+		}
+	
+		& :last-child {
+			#br.r(@val);
+		}
+	}
+}

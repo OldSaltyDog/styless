@@ -1,0 +1,15 @@
+#bg {
+	.gridlines(@major-s: 32px; @minor-s: 8px; @clr1: @fw-20; @clr2: @fw-10; @bg) {
+		@g1: @clr1 0, @clr1 2px, @t 2px, @t @major-s;
+		@g2: @clr2 0, @clr2 1px, @t 1px, @t @minor-s;
+		#bg.add(#gf.lg.rep(@cs: @g1; @angle: 90deg)[]);
+		#bg.add(#gf.lg.rep(@cs: @g1; @angle: 180deg)[]);
+		#bg.add(#gf.lg.rep(@cs: @g2; @angle: 90deg)[]);
+		#bg.add(#gf.lg.rep(@cs: @g2; @angle: 180deg)[]);
+		#bg.pos.x(-1px);
+		#bg.pos.y(-1px);
+		#bg.pos.x(0);
+		#bg.pos.y(0);
+		#bg.add(@bg);
+	}
+}

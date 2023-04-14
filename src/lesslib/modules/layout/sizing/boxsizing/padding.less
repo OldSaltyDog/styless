@@ -1,0 +1,15 @@
+#box {
+	.padding() {
+		box-sizing: padding-box;
+	}
+
+	.padding(@w) {
+		box-sizing: padding-box;
+		width: @w;
+	}
+
+	.padding(@w; @h) {
+		box-sizing: padding-box;
+		.size(@w, @h);
+	}
+}

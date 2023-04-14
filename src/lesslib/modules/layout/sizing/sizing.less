@@ -1,0 +1,25 @@
+/**
+* page:    sizing.less
+* date:    09Feb2023
+* prog:    WA Orr
+* -----------------------
+* @ns:     #size
+* @type: 	MultiSetter
+* @mixin:  .set() + 1
+* @desc:    sets element height & width
+* -----------------------
+* @size*  	::  <distance>  :: :: applies value to both height and width
+* @width*  	::  <distance>  :: :: value applies to width
+* @height*  ::  <distance>  :: :: value applies to height
+**/
+#size {
+	.set(@size) {
+		width: @size;
+		height: @size;
+	}
+
+	.set(@width; @height) {
+		width: @width;
+		height: @height;
+	}
+}

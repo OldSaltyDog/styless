@@ -1,0 +1,47 @@
+.mar(@mar) when (@mar > 0) {
+	margin: @mar;
+}
+
+#mar {
+	.none() {
+		margin: 0;
+	}
+
+	.auto() {
+		margin: auto;
+	}
+
+	.auto(@side) {
+		margin-${side}: auto;
+	}
+
+	.auto() {
+		.top() {
+			margin-top: auto;
+		}
+
+		.right() {
+			margin-right: auto;
+		}
+
+		.bottom() {
+			margin-bottom: auto;
+		}
+
+		.left() {
+			margin-left: auto;
+		}
+
+		.x(@y: 0) {
+			margin: auto @y;
+		}
+
+		.y(@x: 0) {
+			margin: @x auto;
+		}
+
+		.xy() {
+			margin: auto;
+		}
+	}
+}

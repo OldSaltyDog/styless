@@ -1,0 +1,27 @@
+#flex {
+	.x(@rev: false) {
+		display: flex;
+		flex-wrap: wrap;
+
+		& when (@rev) {
+			flex-direction: row-reverse;
+		}
+
+		& when (@rev = false) {
+			flex-direction: row;
+		}
+	}
+
+	.y(@rev: false) {
+		display: flex;
+		flex-wrap: wrap;
+
+		& when (@rev) {
+			flex-direction: column-reverse;
+		}
+
+		& when (@rev = false) {
+			flex-direction: column;
+		}
+	}
+}

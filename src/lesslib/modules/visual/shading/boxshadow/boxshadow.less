@@ -1,0 +1,13 @@
+#bs {
+	.set(@list; @inset: false) {
+		box-shadow+: @list;
+
+		& when (@inset) {
+			box-shadow+_: inset;
+		}
+	}
+
+	.inset() {
+		box-shadow+_: inset;
+	}
+}

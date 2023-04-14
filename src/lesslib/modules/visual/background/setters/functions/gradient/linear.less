@@ -1,0 +1,11 @@
+#gf {
+	.linear(@cs; @angle: 180deg) {
+		@img: linear-gradient(@angle, @cs);
+	}
+
+	.linear() {
+		.repeat(@cs; @angle: 180deg) {
+			@img: repeating-linear-gradient(@angle, @cs);
+		}
+	}
+}

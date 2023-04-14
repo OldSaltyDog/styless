@@ -1,0 +1,16 @@
+/**
+ * @name: #bg.lg.convex
+ * @desc: Sets a linear convex background
+ * @params: 
+ * 		@clr* 	<color> 	(-)
+ * 		@amt* 	<number>	(10)
+ * 		@angle*	<angle>		(180deg)
+ * */
+#bg {
+	.lg() {
+		.concave(@clr; @amt: 10; @angle: @from[t]) {
+			@cs: #cs.concave(@clr, @amt)[];
+			background+: #gf.linear(@cs; @angle)[];
+		}
+	}
+}

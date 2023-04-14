@@ -1,0 +1,22 @@
+/**
+* @ns:		#size
+* @mixins:	minmax
+* @desc:    desc
+* @params:  
+* @min*  :  <distance> | <keyword> : : minimum height/width
+* @max*  :  <distance> | <keyword> : : maximum height/width
+
+**/
+#size {
+	.range() {
+		.width(@min; @max) {
+			min-width: @min;
+			max-width: @max;
+		}
+
+		.height(@min; @max) {
+			min-height: @min;
+			max-height: @max;
+		}
+	}
+}

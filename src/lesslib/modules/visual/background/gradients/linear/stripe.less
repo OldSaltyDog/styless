@@ -1,0 +1,18 @@
+/**
+ * @name: #bg.lg.stripe
+ * @desc: Sets a 2 color linear stripe hardstop gradient 
+ * @params: 
+ * 		@clr1* 	<color> 	(-)				color of stripe
+ * 		@clr2* 	<color> 	(transparent)	color on either side of stripe
+ * 		@angle*	<angle>		(180deg)		angle of gradient
+ * 		@width	<length>	(50%)			sets width of stripe
+ * 		@cp		<length>	(50%)			sets centerpoint of stripe
+ * */
+#bg {
+	.lg() {
+		.stripe(@clr1; @clr2: @t; @angle: @from[t]; @width: 50%; @cp: 50%) {
+			@cs: #cs.stripe(@clr1, @clr2, @width, @cp)[];
+			background+: #gf.linear(@cs; @angle)[];
+		}
+	}
+}

@@ -1,0 +1,23 @@
+#xf {
+	.rotate(@angle) {
+		#xf.set(rotate(@angle));
+	}
+
+	.rotate() {
+		.x(@angle) {
+			#xf.set(rotateX(@angle));
+		}
+
+		.y(@angle) {
+			#xf.set(rotateY(@angle));
+		}
+
+		.z(@angle) {
+			#xf.set(rotateZ(@angle));
+		}
+	}
+
+	.rotate3d(@x: 0; @y: 0; @z: 0; @deg: 0) {
+		#xf.set(rotate3d(@arguments));
+	}
+}

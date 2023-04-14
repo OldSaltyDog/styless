@@ -1,0 +1,51 @@
+/**
+ * @prop: backdrop-filter
+ * @type: <filter-function>
+ * @desc: Applies filter effects to background behind the element
+ * 
+ * */
+#bdf {
+	.none(@val) {
+		backdrop-filter: none;
+	}
+
+	.blur(@val) {
+		backdrop-filter+: blur(@val);
+	}
+
+	.brightness(@val) {
+		backdrop-filter+: brightness(@val);
+	}
+
+	.contrast(@val) {
+		backdrop-filter+: contrast(@val);
+	}
+
+	.drop-shadow(@val) {
+		backdrop-filter+: drop-shadow(@val);
+	}
+
+	.grayscale(@val) {
+		backdrop-filter+: grayscale(@val);
+	}
+
+	.hue-rotate(@val) {
+		backdrop-filter+: hue-rotate(@val);
+	}
+
+	.invert(@val) {
+		backdrop-filter+: invert(@val);
+	}
+
+	.opacity(@val) {
+		backdrop-filter+: opacity(@val);
+	}
+
+	.sepia(@val) {
+		backdrop-filter+: sepia(@val);
+	}
+
+	.saturate(@val) {
+		backdrop-filter+: saturate(@val);
+	}
+}

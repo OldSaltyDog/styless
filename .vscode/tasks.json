@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Less: Main",
+			"type": "shell",
+			"command": "lessc stylewerx.less demos/assets/css/swx.css --math=strict --strict-units=on",
+			"group": "build"
+		},
+		{
+			"label": "Less: Args",
+			"type": "shell",
+			"command": "lessc stylewerx.less demos/assets/css/swx.css",
+			"args": [
+				"paths=src/lesslib",
+				"--plugin=[functions, lists]",
+				"--math=strict",
+				"--strict-units=on"
+			],
+			"group": "build"
+		}
+	]
+}

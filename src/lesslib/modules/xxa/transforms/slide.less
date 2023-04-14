@@ -1,0 +1,40 @@
+#xf {
+	.slide() {
+
+		.in() {
+			#xf.xlate(0, 0);
+		}
+
+		.up(@amt: 100%) {
+			#xf.xlate.y(-(amt));
+		}
+
+		.ur(@amt: 100%) {
+			#xf.xlate(@amt, -(@amt));
+		}
+
+		.right(@amt: 100%) {
+			#xf.xlate.x(@amt);
+		}
+
+		.dr(@amt: 100%) {
+			#xf.xlate(@amt, @amt);
+		}
+
+		.down(@amt: 100%) {
+			#xf.xlate.y(@amt);
+		}
+
+		.dl(@amt: 100%) {
+			#xf.xlate(-(@amt), @amt);
+		}
+
+		.left(@amt: 100%) {
+			#xf.xlate.x(-(@amt));
+		}
+
+		.ur(@amt: 100%) {
+			#xf.xlate(-(@amt), -(@amt));
+		}
+	}
+}

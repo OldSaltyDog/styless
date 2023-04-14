@@ -1,0 +1,15 @@
+#flex {
+	.row(@rev: false) {
+		display: flex;
+		flex-direction: row;
+
+		& when (@rev) {
+			flex-direction: row-reverse;
+			flex-wrap: wrap;
+		}
+
+		& when (@rev = false) {
+			flex-wrap: nowrap;
+		}
+	}
+}

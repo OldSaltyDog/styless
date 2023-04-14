@@ -1,0 +1,10 @@
+#xi {
+	.pri() {
+		.in(@prop: all; @dur: @xi-pri-dur; @tf: @tf-pri-in; @delay: 0) { 
+			#xi.set(@prop, @dur, @tf, @delay);
+		}
+		.out(@prop: all; @dur: @xi-pri-dur; @tf: @tf-pri-out; @delay: 0) { 
+			#xi.set(@prop, @dur, @tf, @delay);
+		}
+	}
+}

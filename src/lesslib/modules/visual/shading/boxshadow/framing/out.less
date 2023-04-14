@@ -1,0 +1,25 @@
+#frame {
+	.all(@size; @clr) {
+		#bs.set(@size 0 0 @size @clr);
+	}
+	.x(@size; @clr) {
+		#bs.set(@size 0 0 @size @clr);
+		#bs.set(-(@size) 0 0 @size @clr);
+	}
+	.y(@size; @clr) {
+		#bs.set(0 @size 0 @size @clr);
+		#bs.set(0 -(@size) 0 @size @clr);
+	}
+	.top(@size; @clr) {
+		#bs.set(0 @size 0 @size @clr);
+	}
+	.right(@size; @clr) {
+		#bs.set(-(@size) 0 0 @size @clr);
+	}
+	.bottom(@size; @clr) {
+		#bs.set(0 -(@size) 0 @size @clr);
+	}
+	.left(@size; @clr) {
+		#bs.set(@size 0 0 @size @clr);
+	}		
+}

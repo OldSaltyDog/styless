@@ -1,0 +1,48 @@
+/**
+* page:    panels.less
+* date:    09Feb2023
+* prog:    WA Orr
+* -----------------------
+* @ns:     	#panel
+* @type: 	Builder
+* @mixins:	.start() : .end() : .between() : .around() : .even() : .stretch() : .baseline() : 
+* @prop: 	align-self
+* @desc:	sets panel child alignment
+**/
+#panel {
+	.x() {
+		.start(@rev: false) {
+			#flex.x(@rev);
+			#jc.fs();
+		}
+
+		.end(@rev: false) {
+			#flex.x(@rev);
+			#jc.fe();
+		}
+
+		.stretch(@rev: false) {
+			#flex.x(@rev);
+			#fxa.stretch();
+		}
+
+		.baseline(@rev: false) {
+			#flex.x(@rev);
+			#jc.bl();
+		}
+
+		.between(@rev: false) {
+			#flex.x(@rev);
+			#jc.sb();
+		}
+
+		.around(@rev: false) {
+			#flex.x(@rev);
+			#jc.sa();
+		}
+
+		.even(@rev: false) {
+			#flex.x(@rev);
+		}
+	}
+}

@@ -1,0 +1,23 @@
+/**
+ * @name: #bg.lg.lighten / darken
+ * @desc: Creates a 2 color linear gradient
+ * @params: 
+ * 		@clr* 	<color> 	(-)
+ * 		@amt* 	<number>	(10)
+ * 		@angle*	<angle>		(180deg)
+ * */
+#bg {
+	.lg() {
+		.lighten(@clr; @amt: 10; @angle: @from[top]) {
+			@cs: @clr,
+			lighten(@clr, @amt);
+			background+: #gf.linear(@cs; @angle)[];
+		}
+
+		.darken(@clr; @amt: 10; @angle: @from[top]) {
+			@cs: @clr,
+			darken(@clr, @amt);
+			background+: #gf.linear(@cs; @angle)[];
+		}
+	}
+}

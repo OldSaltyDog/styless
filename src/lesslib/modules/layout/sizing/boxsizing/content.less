@@ -1,0 +1,15 @@
+#box {
+	.content() {
+		box-sizing: content-box;
+	}
+
+	.content(@w) {
+		box-sizing: content-box;
+		width: @w;
+	}
+
+	.content(@w; @h) {
+		box-sizing: content-box;
+		.size(@w, @h);
+	}
+}

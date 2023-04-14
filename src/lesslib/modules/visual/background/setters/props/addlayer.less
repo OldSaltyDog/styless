@@ -1,0 +1,18 @@
+#bg {
+	.add(@img) {
+		background+: @img;
+	}
+
+	.add(@img; @pos) {
+		background+: @img @pos;
+	}
+
+	.add(@img; @pos; @size) {
+		background+: @img ~'@{pos}/@{size}';
+	}
+
+	.add(@img; @pos; @size; @repeat) {
+		@sp: ~'@{pos}/@{size}';
+		background+: @img @sp @repeat;
+	}
+}

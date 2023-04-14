@@ -1,0 +1,34 @@
+/**
+* page:    flexbasis.less
+* date:    10Feb2023
+* prog:    WA Orr
+* -----------------------
+* @ns:     	#flex
+* @type:    Keyword Value Setter
+* @prop:  	flex-basis
+* @mixins: 	auto(), min(), max(), fit(), content()
+* @desc:    sets the initial sizing of a flex element
+* -----------------------
+**/
+#flex {
+
+	.auto() {
+		flex-basis: auto;
+	}
+
+	.min() {
+		flex-basis: min-content;
+	}
+
+	.max() {
+		flex-basis: max-content;
+	}
+
+	.fit() {
+		flex-basis: fit-content;
+	}
+
+	.content() {
+		flex-basis: content;
+	}
+}

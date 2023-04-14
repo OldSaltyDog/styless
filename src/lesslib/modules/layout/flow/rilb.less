@@ -1,0 +1,19 @@
+/**
+ * 	@ns: 		#flow
+ * 	@name:		.rilb'
+ * 	@desc: 		display: 	inline-block
+ * 				position: 	relative 
+ * 	@params:	@width*		<distance>		sets element width	
+ **/
+#flow {
+	.rilb() {
+		#disp.block(true);
+		#pos.rel();
+	}
+
+	.rilb(@width) {
+		#disp.block(true);
+		#pos.rel();
+		width: @width;
+	}
+}

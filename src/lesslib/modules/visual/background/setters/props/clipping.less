@@ -1,0 +1,25 @@
+/**
+ * @prop: background-clip
+ * @type: [ border-box | padding-box | content-box | text ]
+ * @desc: #bg.clip.<mixin>()
+ **/
+#bg {
+	.clip() {
+		.padbox() {
+			background-clip+: padding-box;
+		}
+
+		.borderbox() {
+			background-clip+: border-box;
+		}
+
+		.contentbox() {
+			background-clip+: content-box;
+		}
+
+		.text() {
+			background-clip+: text;
+			color: @t;
+		}
+	}
+}

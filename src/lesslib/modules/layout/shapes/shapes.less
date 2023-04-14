@@ -1,0 +1,21 @@
+#shapes {
+	.circle(@size) {
+		.size(@size);
+		.br-50();
+	}
+	
+	.halfround(@size) {
+		.size(@size);
+		.br-25();
+	}
+	
+	.egg(@w; @h) {
+		.size(@w, @h);
+		#br.tb-lr(50% 50% 50% 50%; 60% 60% 40% 40%);
+	}
+	
+	.oval(@w; @h) {
+		.size(@w, @h);
+		.br-50();
+	}
+}

@@ -1,0 +1,21 @@
+#ts {
+	.press(@width: 2px; @blur: 2px; @hl: @fw-20; @clr: @fb-40) {
+		color: @clr;
+		text-shadow: @width @width @blur @hl;
+	}
+
+	.inset(@clr-l: @fw-20; @clr-d: @fb-25) {
+		text-shadow: -1px -1px 1px @clr-l,
+			2px 2px 2px @clr-d;
+	}
+
+	.retro(@bg; @width: 2px; @clr: @fb-25) {
+		text-shadow: @width @width 1px @bg,
+			(@width*2) -(@width*2) 1px @clr-d;
+	}
+
+	.long(@clr; @loops; @clr-mod: 2; @curr: 0px) when (@curr < @loops) {
+		text-shadow+: @curr (@curr * 2) 0 @clr;
+		#ts.long((@clr + @clr-mod), @loops, @clr-mod, (@curr + 1));
+	}
+}

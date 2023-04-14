@@ -1,0 +1,14 @@
+#flex {
+	.col(@rev: false) {
+		display: flex;
+		flex-direction: column;
+
+		& when (@rev) {
+			flex-wrap: column-reverse nowrap;
+		}
+
+		& when (@rev = false) {
+			flex-wrap: column nowrap;
+		}
+	}
+}

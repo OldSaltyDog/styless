@@ -1,0 +1,17 @@
+/**
+* @ns:     #flow
+* @mixin:  .ab()
+* @desc:   display: block, position: absolute
+**/
+#flow {
+	.ab() {
+		#disp.block();
+		#pos.abs();
+	}
+
+	.ab(@width) {
+		#disp.block();
+		#pos.abs();
+		width: @width;
+	}
+}

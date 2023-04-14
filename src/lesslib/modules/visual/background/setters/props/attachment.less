@@ -1,0 +1,22 @@
+/**
+ * mixin type:	value-setter 
+ * property: 	background-attachment
+ * callers 
+ * 	- #bg.scroll(): scroll
+ * 	- #bg.fixed(): fixed
+ * 	- #bg.local(): local
+ **/
+
+#bg {
+	.scroll() {
+		background-attachment+: scroll;
+	}
+
+	.fixed() {
+		background-attachment+: fixed;
+	}
+
+	.local() {
+		background-attachment+: local;
+	}
+}

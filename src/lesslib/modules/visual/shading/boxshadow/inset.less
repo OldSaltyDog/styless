@@ -1,0 +1,38 @@
+#bs {
+	.in(@list) {
+		#bs.set(@list; true);
+	}
+	.in() {
+		.up(@y: 1px; @blur: 1px; @spread: 0; @clr: @fb-25) {
+			#bs.set(0 @y @blur @spread @clr; true);
+		}
+	
+		.right(@x: 1px; @blur: 1px; @spread: 0; @clr: @fb-25) {
+			#bs.set(-(@x) 0 @blur @clr; true);
+		}
+	
+		.down(@y: 1px; @blur: 1px; @spread: 0; @clr: @fb-25) {
+			#bs.set(0 -(@y) @blur @clr; true);
+		}
+	
+		.left(@x: 1px; @blur: 1px; @spread: 0; @clr: @fb-25) {
+			#bs.set(@x 0 @blur @clr; true);
+		}
+	
+		.ur(@x: 1; @y: 2; @blur: 1px; @spread: 0; @clr: @fb-25) {
+			#bs.set(-(@x) @y @blur @spread @clr; true);
+		}
+	
+		.lr(@x: 1; @y: 2; @blur: 1px; @spread: 0; @clr: @fb-25) {
+			#bs.set(-(@x) -(@y) @blur @spread @clr; true);
+		}
+	
+		.ll(@x: 1; @y: 2; @blur: 1px; @spread: 0; @clr: @fb-25) {
+			#bs.set(@x -(@y) @blur @spread @clr; true);
+		}
+	
+		.ul(@x: 1; @y: 2; @blur: 1px; @spread: 0; @clr: @fb-25) {
+			#bs.set(@x @y @blur @spread @clr; true);
+		}
+	}
+}

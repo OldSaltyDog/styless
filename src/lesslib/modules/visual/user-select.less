@@ -1,0 +1,28 @@
+#usel {
+	.none() {
+		user-select: none;
+	}
+
+	.auto() {
+		user-select: auto;
+	}
+
+	.all() {
+		user-select: all;
+	}
+
+	.text() {
+		user-select: text;
+		#ts.none();
+	}
+
+	.text(@bg) {
+		.text();
+		#bg.add(@bg);
+	}
+
+	.text(@bg; @fc) {
+		.text(@bg);
+		color: @fc;
+	}
+}

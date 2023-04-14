@@ -1,0 +1,13 @@
+#cs {
+	.concave(@clr; @amt) when (luminance(@clr) < 30) {
+		@cs: lighten(@clr, @amt),
+		@clr,
+		lighten(@clr, @amt);
+	}
+
+	.concave(@clr; @amt) when (default()) {
+		@cs: @clr,
+		darken(@clr, @amt),
+		@clr;
+	}
+}

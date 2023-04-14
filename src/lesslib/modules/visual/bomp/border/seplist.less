@@ -1,0 +1,27 @@
+#border {
+	.seplist() {
+		.top(@clr: @fb-25; @w: 1px; @type: solid) {
+			&:not( :first-child) {
+				border-top: @w @type @clr;
+			}
+		}
+
+		.right(@clr: @fb-25; @w: 1px; @type: solid) {
+			&:not( :last-child) {
+				border-right: @w @type @clr;
+			}
+		}
+
+		.bottom(@clr: @fb-25; @w: 1px; @type: solid) {
+			&:not( :last-child) {
+				border-bottom: @w @type @clr;
+			}
+		}
+
+		.left(@clr: @fb-25; @w: 1px; @type: solid) {
+			&:not( :first-child) {
+				border-left: @w @type @clr;
+			}
+		}
+	}
+}

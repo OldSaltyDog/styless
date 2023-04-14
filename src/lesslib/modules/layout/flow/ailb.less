@@ -1,0 +1,19 @@
+/**
+ * 	@ns: 		#flow
+ * 	@name:		.ailb'
+ * 	@desc: 		display: inline-block
+ * 				position: absolute 
+ * 	@params:	@width*		-	<distance>	
+ **/
+#flow {
+	.ailb() {
+		#disp.block(true);
+		#pos.abs();
+	}
+
+	.ailb(@width) {
+		#disp.block(true);
+		#pos.abs();
+		width: @width;
+	}
+}

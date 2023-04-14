@@ -1,0 +1,37 @@
+#dsp {
+	.set(@val) {
+		display: @val;
+	}
+
+	.none() { 
+		display: none;
+	}
+
+	.contents() { 
+		display: contents;
+	}
+
+	.block() {
+		display: block;
+	}
+
+	.block-il() {
+		display: inline-block;
+	}
+
+	.flex(@il: false) when (@il) {
+		display: inline-flex;
+	}
+
+	.flex(@il: false) when (default()) {
+		display: flex;
+	}
+
+	.flex-il() {
+		display: inline-flex;
+	}
+
+	.flowroot() {
+		display: flow-root;
+	}
+}

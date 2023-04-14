@@ -1,0 +1,53 @@
+
+/*
+*
+* File: font.less
+* Date: 10Jul2022
+* Code: W. Anthony Orr
+* Desc: Value setters for font 
+*/
+
+#font {
+	.set(@family; @fs; @lh) {
+		font: @fs/@lh @family;
+	}
+
+	.set(@family; @fs; @lh; @weight) {
+		font: @fs/@lh @family;
+		font-weight: @weight;
+	}
+
+	.family(@fam) {
+		font-family+: @fam;
+	}
+
+	.size(@fs) {
+		font-size: @fs;
+	}
+
+	.s-lh(@fs; @lh) {
+		font-size: @fs;
+		line-height: @lh;
+	}
+
+	.b700() {
+		font-weight: 700;
+	}
+
+	.b600() {
+		font-weight: 600;
+	}
+
+	.normal() {
+		font-style: normal;
+	}
+
+	.italic() {
+		font-style: italic;
+	}
+
+	.inherit() {
+		font-size: inherit;
+		line-height: inherit;
+	}
+}

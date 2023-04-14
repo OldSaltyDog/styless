@@ -1,0 +1,17 @@
+/**
+ * @name: #bg.lg.split
+ * @desc: Sets a 2 color linear split hardstop gradient 
+ * @params: 
+ * 		@clr1* 	<color> 	(-)			1st color
+ * 		@clr2* 	<color> 	(-)			2nd color
+ * 		@angle*	<angle>		(180deg)	direction of gradient
+ * 		@stop: 	<length>	(50%)		position of hard stop
+ * */
+#bg {
+	.lg() {
+		.split(@clr1; @clr2; @angle: @from[t]; @stop: 50%) {
+			@cs: #cs.split(@clr1, @clr2, @sp)[];
+			background+: #gf.linear(@cs; @angle)[];
+		}
+	}
+}

@@ -1,0 +1,22 @@
+#xf {
+	.xlate(@x; @y) {
+		#xf.set(translate(@x, @y));
+	}
+
+	.xlate() {
+		.x(@x) {
+			#xf.set(translateX(@x));
+		}
+		
+		.y(@y) {
+			#xf.set(translateY(@y));
+		}
+		
+		.z(@z) {
+			#xf.set(translateZ(@z));
+		}
+	}
+	.xlate3d(@x; @y; @z) {
+		#xf.set(translate3d(@x, @y, @z));
+	}
+}

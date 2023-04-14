@@ -1,0 +1,21 @@
+#lh {
+	.set(@lh) {
+		line-height: @lh;
+	}
+
+	.inherit() {
+		line-height: inherit;
+	}
+
+	.step(@step) {
+		line-height-step: @step;
+	}
+
+	.to-h(@lh; @fs) {
+		height: (@lh * @fs);
+	}
+
+	.from-h(@h; @fs) {
+		line-height: (@h/@fs);
+	}
+}

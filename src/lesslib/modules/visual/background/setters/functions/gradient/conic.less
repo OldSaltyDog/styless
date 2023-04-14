@@ -1,0 +1,27 @@
+#gf {
+	.conic(@cs) {
+		@img: conic-gradient(@cs);
+	}
+
+	.conic(@cs; @start) {
+		@img: conic-gradient(from @start, @cs);
+	}
+
+	.conic(@cs; @start; @origin) {
+		@img: conic-gradient(from @start at @origin, @cp);
+	}
+
+	.conic() {
+		.repeat(@cs) {
+			@img: repeating-conic-gradient(@cs);
+		}
+	
+		.repeat(@cs; @start) {
+			@img: repeating-conic-gradient(from @start, @cs);
+		}
+	
+		.repeat(@cs; @start; @origin) {
+			@img: repeating-conic-gradient(from @start at @origin, @cp);
+		}
+	}
+}

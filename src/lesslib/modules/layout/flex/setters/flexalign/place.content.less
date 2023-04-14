@@ -1,0 +1,26 @@
+.pc(@align) {
+	place-content: @arguments
+}
+
+.pc(@align; @justify) {
+	place-content: @arguments
+}
+
+#pc {
+
+	.fs-c() {
+		.pc(@ca[fs], @ca[c]);
+	}
+
+	.str() {
+		.pc(@ca[str], @ca[str]);
+	}
+
+	.sa() {
+		.pc(@ca[sa], @ca[sa]);
+	}
+
+	.c() {
+		.pc(@ca[c], @ca[c]);
+	}
+}

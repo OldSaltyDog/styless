@@ -1,0 +1,16 @@
+#flex {
+	.gap() {
+		.y(@gap) {
+			column-gap: @gap;
+		}
+
+		.x(@gap) {
+			row-gap: @gap;
+		}
+
+		.x-y(@x; @y) {
+			row-gap: @x;
+			column-gap: @y;
+		}
+	}
+}

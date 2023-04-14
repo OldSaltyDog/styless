@@ -1,0 +1,25 @@
+#xf {
+	.scale(@v: 1.0) {
+		#xf.set(scale(@v));
+	}
+
+	.scale(@x: 1.0; @y: 1.0) {
+		#xf.set(scale(@x, @y));
+	}
+
+	.scale() {
+		.x(@x: 1.0) {
+			#xf.set(scaleX(@x));
+		}
+		.y(@y: 1.0) {
+			#xf.set(scaleX(@y));
+		}
+		.z(@z: 1.0) {
+			#xf.set(scaleX(@z));
+		}
+	}
+	
+	.scale3d(@x: 1.0; @y: 1.0; @z: 1.0) {
+		#xf.set(scale3d(@x, @y, @z));
+	}
+}

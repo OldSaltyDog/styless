@@ -1,0 +1,29 @@
+#pf {
+	.inset(@list) {
+		@ret: inset(@list);
+	}
+
+	.circle(@size) {
+		@ret: circle(@size);
+	}
+
+	.circle(@size; @pos) {
+		@ret: circle(@size at @pos);
+	}
+
+	.ellipse(@w; @h) {
+		@ret: ellipse(@w @h);
+	}
+
+	.ellipse(@w; @h; @pos) {
+		@ret: ellipse(@size at @pos);
+	}
+
+	.polygon(@rest...) {
+		@ret: polygon(@rest);
+	}
+
+	.path(@val) {
+		@ret: path(@val);
+	}
+}

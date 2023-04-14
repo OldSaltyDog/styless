@@ -1,0 +1,9 @@
+#cs {
+	.convex(@clr; @amt) when (luminance(@clr) < 30) {
+		@cs: lighten(@clr, @amt), @clr, lighten(@clr, @amt);
+	}
+	
+	.convex(@clr; @amt) when (default()) {
+		@cs: darken(@clr, @amt), @clr; darken(@clr, @amt);
+	}
+}

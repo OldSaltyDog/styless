@@ -1,0 +1,7 @@
+#cs {
+	.stripe(@clr1; @clr2: @t; @width; @cp) {
+		@sp: (@cp - (@width/2));
+		@ep: (@cp + (@width/2));
+		@cs: @clr1 0, @clr1 @sp, @clr2 @sp, @clr2 @ep, @clr1 @ep, @clr1 100%;
+	}
+}

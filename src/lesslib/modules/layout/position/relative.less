@@ -1,0 +1,15 @@
+#pos {
+	.rel() {
+		position: relative;
+	}
+
+	.rel(@pos) {
+		.pos(@pos);
+		position: relative;
+	}
+
+	.rel(@left; @top) {
+		.pos(@left, @top);
+		position: relative;
+	}
+}

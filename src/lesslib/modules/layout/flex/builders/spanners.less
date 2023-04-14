@@ -1,0 +1,32 @@
+/**
+* page:    spanners.less
+* date:    09Feb2023
+* prog:    WA Orr
+* -----------------------
+* @ns:     	#span
+* @type:	Builder
+* @mixin:	.x(), @y()
+* @desc:	element content direction, orientation, and resizing bevaviour 
+* -----------------------
+* @basis*  :  <number> | <keyword> : auto  : Sets initial element size
+**/
+#span {
+
+	.x(@basis: auto) {
+		#flex.row();
+		flex-basis: @basis;
+
+		& when (isnumber(@basis)) {
+			min-width: @basis;
+		}
+	}
+
+	.y(@basis: auto) {
+		#flex.col();
+		flex-basis: @basis;
+
+		& when (isnumber(@basis)) {
+			min-height: @basis;
+		}
+	}
+}

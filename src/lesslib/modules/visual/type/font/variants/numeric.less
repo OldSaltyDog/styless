@@ -1,0 +1,45 @@
+/*
+*
+* File: numeric.less
+* Date: 09Jul2022
+* Code: W. Anthony Orr
+* Desc: font-variant-numeric value setters 
+*/
+
+#font {
+	.num-var(@kw: normal) {
+		font-variant-numeric: @kw;
+	}
+
+	.ordinal() {
+		font-variant-numeric: ordinal;
+	}
+
+	.slashed-zero() {
+		font-variant-numeric: slashed-zero;
+	}
+
+	.lining() {
+		font-variant-numeric: lining-nums;
+	}
+
+	.oldstyle() {
+		font-variant-numeric: oldstyle-nums;
+	}
+
+	.proportional() {
+		font-variant-numeric: proportional-nums;
+	}
+
+	.tabular() {
+		font-variant-numeric: tabular-nums;
+	}
+
+	.diagonal() {
+		font-variant-numeric: diagonal-fractions;
+	}
+
+	.stacked() {
+		font-variant-numeric: stacked-fractions;
+	}
+}

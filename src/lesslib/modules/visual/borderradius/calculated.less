@@ -1,0 +1,13 @@
+#br {
+	.by-h(@h, @mod: .5) {
+		border-radius: (@h * @mod);
+	}
+
+	.inner(@outer; @len) when ((@outer - @dist) > 0) {
+		border-radius: (@or - @dist); 
+	}
+
+	.outer(@ir; @dist) {
+		border-radius: (@ir + @dist); 
+	}
+}

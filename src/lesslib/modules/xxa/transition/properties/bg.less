@@ -1,0 +1,15 @@
+#xi {
+	.bg() {
+		.size(@size; @dur: @xi-pri-dur; @tf: @tf-pri-in; @delay: 0) {
+			#xi.set(background-size, @dur; @tf; @delay);
+		}
+
+		.pos(@val; @dur: @xi-pri-dur; @tf: @tf-pri-in; @delay: 0) {
+			#xi.set(background-position, @dur; @tf; @delay);
+		}
+
+		.color(@val; @dur: @xi-pri-dur; @tf: @tf-pri-in; @delay: 0) {
+			#xi.set(background-color, @dur; @tf; @delay);
+		}
+	}
+}

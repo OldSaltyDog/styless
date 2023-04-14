@@ -1,0 +1,26 @@
+#bg {
+	.checkered1(@clr1; @size; @clr2: @t) {
+		@cs: #stops.hard.mid(@clr1, @clr2);
+		#bg.add(#gf.linear(45deg, @cs)[]);
+		#bg.add(#gf.linear(225deg, @cs)[]; (@size/2));
+		#bg.size(@size);
+	}
+
+	.checkered2(@clr1; @size; @clr2: @t) {
+		@cs: @clr1 0 90deg,
+		@clr2 90deg 180deg,
+		@clr1 180deg 270deg,
+		@clr2 270deg 360deg;
+		#bg.add(#gf.conic(@cs)[]);
+		#bg.size(@size);
+	}
+
+	.checkered45(@clr1; @size; @clr2: @t) {
+		@cs: @clr1 0 90deg,
+		@clr2 90deg 180deg,
+		@clr1 180deg 270deg,
+		@clr2 270deg 360deg;
+		#bg.add(#gf.conic(@cs; 45deg)[]);
+		#bg.size(@size);
+	}
+}

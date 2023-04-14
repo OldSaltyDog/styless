@@ -1,0 +1,41 @@
+#ts {
+	.none() {
+		text-shadow: none;
+	}
+
+	.set(@list) {
+		text-shadow+: @list;
+	}
+
+	.up(@y: 1px; @clr: @fb-25; @blur: 1px) {
+		text-shadow+: 0 -(@y) @blur @clr;
+	}
+
+	.right(@x: 1px; @clr: @fb-25; @blur: 1px) {
+		text-shadow+: @x 0 @blur @clr;
+	}
+
+	.down(@y: 1px; @clr: @fb-25; @blur: 1px) {
+		text-shadow+: 0 @y @blur @clr;
+	}
+
+	.left(@x: 1px; @clr: @fb-25; @blur: 1px) {
+		text-shadow+: -(@x) 0 @blur @clr;
+	}
+
+	.ur(@x: 1; @y: 2; @blur: 1px; @clr: @fb-25) {
+		text-shadow+: @x -(@y) @blur @clr;
+	}
+
+	.lr(@x: 1; @y: 2; @blur: 1px; @clr: @fb-25) {
+		text-shadow+: @x @y @blur @clr;
+	}
+
+	.ll(@x: 1; @y: 2; @blur: 1px; @clr: @fb-25) {
+		text-shadow+: -(@x) @y @blur @clr;
+	}
+
+	.ul(@x: 1; @y: 2; @blur: 1px; @clr: @fb-25) {
+		text-shadow+: -(@x) -(@y) @blur @clr;
+	}
+}

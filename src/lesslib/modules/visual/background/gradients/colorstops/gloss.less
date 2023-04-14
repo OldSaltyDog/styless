@@ -1,0 +1,13 @@
+#cs {
+	.gloss(@clr) when (luminance(@clr) <= 25%) {
+		@lg: lighten(@clr, 6) 0, lighten(@clr, 10) 45%, lighten(@clr, 8) 50%, @clr 100%;
+	}
+
+	.gloss(@clr) when (luminance(@clr) > 25%) and (luminance(@clr) < 75%) {
+		@lg: darken(@clr, 4) 0, lighten(@clr, 4) 45%, @clr 50%, darken(@clr, 8) 100%;
+	}
+
+	.gloss(@clr) when (default()) {
+		@lg: darken(@clr, 5) 0, @clr 45%, darken(@clr, 3) 50%, darken(@clr, 8) 100%;
+	}
+}

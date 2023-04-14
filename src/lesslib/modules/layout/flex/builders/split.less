@@ -1,0 +1,25 @@
+/**
+* page:    split.less
+* date:    09Feb2023
+* prog:    WA Orr
+* -----------------------
+* @ns:		#fxa
+* @mixin:	.split()
+* @type: 	MultiSetter
+* @props: 	align-item, margin-left
+* @desc:   	aligns nth-child right, as well as all subsequent children
+* -----------------------
+* @nth* :: 	<number> 	:: :: The target element  
+* @ai*  ::  <keyword>  ::   center  ::   cross-axis alignment
+* @mar* ::  <length> | <percent> | <keyword>  |   auto 
+**/
+#fxa {
+	.split(@nth; @ai: #ai.c(); @mar: auto) {
+		#jc.fs();
+		align-items: @ai;
+
+		&:nth-child(@{nth}) {
+			margin-left: @mar;
+		}
+	}
+}

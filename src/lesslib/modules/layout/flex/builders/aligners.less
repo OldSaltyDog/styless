@@ -1,0 +1,49 @@
+/**
+* page:    aligners.less
+* date:    09Feb2023
+* prog:    WA Orr
+* -----------------------
+* @ns:		#fxa
+* @mixins:  .start(), .end(), .middle(), .stretch(), .even(), .around(), .between() 
+* @type: 	Keyword/Value Setter
+* @props: 	justify-content, align-items
+* @desc:   	Sets main and cross-axis alignment
+* -----------------------
+* @ai* :: <keyword> :: #ai.c() :: Sets cross-axis alignment for child element
+**/
+#fxa {
+	.start(@ai: center) {
+		#jc.fs();
+		align-items: @ai;
+	}
+
+	.end(@ai: center) {
+		#jc.fs();
+		align-items: @ai;
+	}
+
+	.middle(@ai: center) {
+		#jc.c();
+		align-items: center;
+	}
+
+	.stretch(@ai: center) {
+		#jc.str();
+		#ai.str();
+	}
+
+	.even(@ai: center) {
+		#jc.se();
+		align-items: @ai;
+	}
+
+	.around(@ai: center) {
+		#jc.sa();
+		align-items: @ai;
+	}
+
+	.between(@ai: center) {
+		#jc.sb();
+		align-items: @ai;
+	}
+}

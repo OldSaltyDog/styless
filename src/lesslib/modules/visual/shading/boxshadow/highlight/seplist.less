@@ -1,0 +1,27 @@
+#hl {
+	.seplist() {
+		.top(@width: 1px; @blur: 0; @spread: 0; @clr: @fb-25) {
+			&:not( :first-child) {
+				box-shadow+: 0 @width @blur @spread @clr inset;
+			}
+		}
+
+		.right(@width: 1px; @blur: 0; @spread: 0; @clr: @fb-25) {
+			&:not( :last-child) {
+				box-shadow+: @width 0 @blur @spread @clr inset;
+			}
+		}
+
+		.bottom(@width: 1px; @blur: 0; @spread: 0; @clr: @fb-25) {
+			&:not( :first-child) {
+				box-shadow+: 0 -(@width) @blur @spread @clr inset;
+			}
+		}
+
+		.left(@width: 1px; @blur: 0; @spread: 0; @clr: @fb-25) {
+			&:not( :last-child) {
+				box-shadow+: -(@width) 0 @blur @spread @clr inset;
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+#xi {
+	.set(@prop: all; @dur: @xi-pri-dur; @tf: linear; @delay: 0) {
+
+		transition+: @prop @dur @tf;
+
+		& when (@delay > 0) {
+			transition+_: @delay;
+		}
+	}
+
+	.property(@prop) {
+		transition-property: @prop;
+	}
+
+	.duration(@dur) {
+		transition-duration: @time;
+	}
+
+	.tf(@dur) {
+		transition-timing-function: @time;
+	}
+
+	.delay(@delay) {
+		transition-delay: @delay;
+	}
+}
